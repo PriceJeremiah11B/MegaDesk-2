@@ -1,4 +1,6 @@
-﻿namespace MegaDesk_2
+﻿using System;
+
+namespace MegaDesk_2
 {
     partial class MainMenu
     {
@@ -19,6 +21,7 @@
             }
             base.Dispose(disposing);
         }
+
 
         #region Windows Form Designer generated code
 
@@ -67,6 +70,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -77,6 +81,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "Search Quotes";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -87,6 +92,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "View Quote";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // AddQuoteButton
             // 
@@ -97,6 +103,7 @@
             this.AddQuoteButton.TabIndex = 7;
             this.AddQuoteButton.Text = "Add New Quote";
             this.AddQuoteButton.UseVisualStyleBackColor = true;
+            this.AddQuoteButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainMenu
             // 
@@ -126,6 +133,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button AddQuoteButton;
+        private EventHandler button1_Click;
     }
 }
 

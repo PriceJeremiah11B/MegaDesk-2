@@ -14,12 +14,9 @@ namespace MegaDesk_2
     {
         public MainMenu()
         {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
+
+        
     }
 }
