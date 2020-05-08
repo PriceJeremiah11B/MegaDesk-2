@@ -29,66 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.createQuote = new System.Windows.Forms.Button();
-            this.displayQuote = new System.Windows.Forms.Button();
-            this.viewQuote = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.AddQuoteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // createQuote
-            // 
-            this.createQuote.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createQuote.Location = new System.Drawing.Point(322, 399);
-            this.createQuote.Name = "createQuote";
-            this.createQuote.Size = new System.Drawing.Size(159, 39);
-            this.createQuote.TabIndex = 0;
-            this.createQuote.Text = "Create Quote";
-            this.createQuote.UseVisualStyleBackColor = true;
-            this.createQuote.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // displayQuote
-            // 
-            this.displayQuote.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuote.Location = new System.Drawing.Point(29, 209);
-            this.displayQuote.Name = "displayQuote";
-            this.displayQuote.Size = new System.Drawing.Size(159, 70);
-            this.displayQuote.TabIndex = 1;
-            this.displayQuote.Text = "Display Quote";
-            this.displayQuote.UseVisualStyleBackColor = true;
-            // 
-            // viewQuote
-            // 
-            this.viewQuote.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewQuote.Location = new System.Drawing.Point(29, 399);
-            this.viewQuote.Name = "viewQuote";
-            this.viewQuote.Size = new System.Drawing.Size(159, 39);
-            this.viewQuote.TabIndex = 2;
-            this.viewQuote.Text = "View All Quotes";
-            this.viewQuote.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(629, 209);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 70);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Search Quotes";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(656, 388);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(132, 50);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -103,12 +51,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(267, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 33);
+            this.label1.Size = new System.Drawing.Size(289, 29);
             this.label1.TabIndex = 6;
             this.label1.Text = "Welcome to Mega Desk";
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(12, 381);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(118, 35);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Exit";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(535, 376);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(118, 37);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Search Quotes";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(146, 380);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(118, 37);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "View Quote";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // AddQuoteButton
+            // 
+            this.AddQuoteButton.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddQuoteButton.Location = new System.Drawing.Point(670, 374);
+            this.AddQuoteButton.Name = "AddQuoteButton";
+            this.AddQuoteButton.Size = new System.Drawing.Size(118, 41);
+            this.AddQuoteButton.TabIndex = 7;
+            this.AddQuoteButton.Text = "Add New Quote";
+            this.AddQuoteButton.UseVisualStyleBackColor = true;
             // 
             // MainMenu
             // 
@@ -116,13 +104,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.viewQuote);
-            this.Controls.Add(this.displayQuote);
-            this.Controls.Add(this.createQuote);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.AddQuoteButton);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
             this.Text = "Mega Desk Imporium";
@@ -133,14 +120,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button createQuote;
-        private System.Windows.Forms.Button displayQuote;
-        private System.Windows.Forms.Button viewQuote;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button AddQuoteButton;
     }
 }
 
