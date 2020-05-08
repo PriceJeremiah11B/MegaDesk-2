@@ -8,9 +8,8 @@ namespace MegaDesk_2
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+
+       private static List<>
         [STAThread]
         static void Main()
         {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MegaDesk_3_Jason_Chantry
+namespace MegaDesk_2
 {
     class DeskQuote
     {
@@ -18,7 +18,7 @@ namespace MegaDesk_3_Jason_Chantry
 
         }
 
-        private static double calculateShipPrice(int noOfDays, double width, double depth)
+        private static double calculateShippingPrice(int noOfDays, double width, double depth)
         {
             double shippingPrice = 0;
             double surfaceArea = width * depth;
@@ -32,3 +32,4 @@ namespace MegaDesk_3_Jason_Chantry
         public string Date { get => date; set => date = value; }
     }
 }
+
