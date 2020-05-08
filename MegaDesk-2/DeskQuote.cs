@@ -8,38 +8,27 @@ namespace MegaDesk_3_Jason_Chantry
 {
     class DeskQuote
     {
-        public string customer { get; set; }
-        public List<Desk> desks
-        {
-            get; private set;
-        }
+        Desk desk;
+        String name;
+        String date = DateTime.Now.ToString("MMMM dd, yyyy");
+
+
         public DeskQuote()
         {
-            desks = new List<Desk>();
+
         }
-        public float total
+
+        private static double calculateShipPrice(int noOfDays, double width, double depth)
         {
-            get
-            {
-                float total = (float)0.0;
-                foreach (var desk in desks)
-                {
-                    total += desk.price;
-                }
-                return total;
-            }
+            double shippingPrice = 0;
+            double surfaceArea = width * depth;
+
+            return shippingPrice;
         }
-        public void addDesk(Desk desk)
-        {
-            this.desks.Add(desk);
-        }
-        public void removeDesk(int index)
-        {
-            this.desks.RemoveAt(index);
-        }
-        public void removeDesk(Desk desk)
-        {
-            this.desks.Remove(desk);
-        }
+
+
+        internal Desk Desk { get => desk; set => desk = value; }
+        public string Name { get => name; set => name = value; }
+        public string Date { get => date; set => date = value; }
     }
 }

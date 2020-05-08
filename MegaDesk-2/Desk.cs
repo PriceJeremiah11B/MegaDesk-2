@@ -8,67 +8,134 @@ namespace MegaDesk-2 {
 
     class Desk
     {
-        private string name;
-        private double width;
-        private double depth;
-        private int numDrawers;
-        public enum SurfaceMaterial
-        {
+    float width;
+    float depth;
+    int drawerNumber;
+    String surfaceMaterial;
+    int shippingDays;
 
-            Laminate = 1,
-            Oak = 2,
-            Rosewood = 3,
-            Veneer = 4,
-            Pine = 5
-        };
-        //Set up rush order array list
-        ArrayList rushOrder = new ArrayList()
-        {
-            "14 days (Normal Delivery)",
-            "7 Days",
-            "5 Days",
-            "3 Days"
-        };
-        private SurfaceMaterial surfaceMaterial;
+    public Desk()
+    {
 
-        //Desk Constructor
-        public Desk()
-        {
-
-        }
-        //Rush Order array list property
-        public ArrayList RushOrder
-        {
-            get { return rushOrder; }
-        }
-        //name property
-        public string Name
-        {
-            get { return this.name; }
-            set { this.name = value; }
-        }
-        //width property
-        public double Width
-        {
-            get { return this.width; }
-            set { this.width = value; }
-        }
-        //depth property
-        public double Depth
-        {
-            get { return this.depth; }
-            set { this.depth = value; }
-        }
-        //Number of Drawers property
-        public int NumDrawers
-        {
-            get { return this.numDrawers; }
-            set { this.numDrawers = value; }
-        }
-        public SurfaceMaterial GetSurfaceMaterial()
-        {
-
-            return this.surfaceMaterial;
-        }
     }
+
+    public float Width { get => width; set => width = value; }
+    public float Depth { get => depth; set => depth = value; }
+    public int DrawerNumber { get => drawerNumber; set => drawerNumber = value; }
+    public string SurfaceMaterial { get => surfaceMaterial; set => surfaceMaterial = value; }
+    public int ShippingDays { get => shippingDays; set => shippingDays = value; }
+    public float SurfaceArea { get => surfaceArea; set => surfaceArea = value; }
+    public decimal FinalDeskCost { get => finalDeskCost; set => finalDeskCost = value; }
+
+    private float surfaceArea;
+    private decimal finalDeskCost;
+
+    internal void calcualateSurfaceArea()
+    {
+        this.SurfaceArea = this.Width * this.Depth;
+    }
+
+    internal void calculateQuote()
+    {
+        decimal baseCost = 200;
+        decimal extraSurfaceAreaCost = 0;
+        decimal materialTypeCost = 0;
+        decimal shippingCost = 0;
+        decimal totalCost = 0;
+        decimal drawerCost;
+
+        if (surfaceArea > 1000)
+        {
+            extraSurfaceAreaCost = (decimal)surfaceArea - 1000;
+        }
+        switch (SurfaceMaterial)
+        {
+
+
+
+            case "Pine":
+                materialTypeCost = 50;
+                break;
+            case "Oak":
+                materialTypeCost = 200;
+                break;
+            case "Laminate":
+                materialTypeCost = 100;
+                break;
+            case "Rosewood":
+                materialTypeCost = 30;
+                break;
+            case "Veneer":
+                materialTypeCost = 125;
+                break;
+        }
+
+        drawerCost = drawerNumber * 50;
+        if (ShippingDays == 14)
+        {
+            shippingCost += 0;
+        }
+
+        else
+        {
+            if (surfaceArea < 1000)
+            {
+                switch (shippingDays)
+                {
+                    case 3:
+                        shippingCost += 60;
+                        break;
+                    case 5:
+                        shippingCost += 40;
+                        break;
+                    case 7:
+                        shippingCost += 30;
+                        break;
+
+
+                }
+            }
+            else if (surfaceArea >= 1000 && surfaceArea <= 2000)
+            {
+
+                switch (shippingDays)
+                {
+                    case 3:
+                        shippingCost += 70;
+                        break;
+                    case 5:
+                        shippingCost += 50;
+                        break;
+                    case 7:
+                        shippingCost += 35;
+                        break;
+
+                }
+            }
+            else
+            {
+                switch (shippingDays)
+                {
+                    case 3:
+                        shippingCost += 80;
+                        break;
+                    case 5:
+                        shippingCost += 60;
+                        break;
+                    case 7:
+                        shippingCost += 40;
+                        break;
+
+
+                }
+            }
+        }
+
+
+
+        totalCost = materialTypeCost + baseCost + shippingCost + extraSurfaceAreaCost + drawerCost;
+        this.FinalDeskCost = totalCost;
+        Console.WriteLine(this.FinalDeskCost);
+    }
+}
 }
