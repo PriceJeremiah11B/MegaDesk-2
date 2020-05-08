@@ -42,9 +42,9 @@
             // createQuote
             // 
             this.createQuote.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createQuote.Location = new System.Drawing.Point(29, 164);
+            this.createQuote.Location = new System.Drawing.Point(322, 399);
             this.createQuote.Name = "createQuote";
-            this.createQuote.Size = new System.Drawing.Size(183, 50);
+            this.createQuote.Size = new System.Drawing.Size(159, 39);
             this.createQuote.TabIndex = 0;
             this.createQuote.Text = "Create Quote";
             this.createQuote.UseVisualStyleBackColor = true;
@@ -53,9 +53,9 @@
             // displayQuote
             // 
             this.displayQuote.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuote.Location = new System.Drawing.Point(29, 235);
+            this.displayQuote.Location = new System.Drawing.Point(29, 209);
             this.displayQuote.Name = "displayQuote";
-            this.displayQuote.Size = new System.Drawing.Size(183, 50);
+            this.displayQuote.Size = new System.Drawing.Size(159, 70);
             this.displayQuote.TabIndex = 1;
             this.displayQuote.Text = "Display Quote";
             this.displayQuote.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             // viewQuote
             // 
             this.viewQuote.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewQuote.Location = new System.Drawing.Point(29, 312);
+            this.viewQuote.Location = new System.Drawing.Point(29, 399);
             this.viewQuote.Name = "viewQuote";
-            this.viewQuote.Size = new System.Drawing.Size(183, 50);
+            this.viewQuote.Size = new System.Drawing.Size(159, 39);
             this.viewQuote.TabIndex = 2;
             this.viewQuote.Text = "View All Quotes";
             this.viewQuote.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(29, 388);
+            this.button3.Location = new System.Drawing.Point(629, 209);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(183, 50);
+            this.button3.Size = new System.Drawing.Size(159, 70);
             this.button3.TabIndex = 3;
             this.button3.Text = "Search Quotes";
             this.button3.UseVisualStyleBackColor = true;
@@ -83,9 +83,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Noto Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(605, 388);
+            this.button4.Location = new System.Drawing.Point(656, 388);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(183, 50);
+            this.button4.Size = new System.Drawing.Size(132, 50);
             this.button4.TabIndex = 4;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(353, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(250, 75);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(398, 363);
+            this.pictureBox1.Size = new System.Drawing.Size(319, 267);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -104,7 +104,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Noto Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 49);
+            this.label1.Location = new System.Drawing.Point(267, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(302, 33);
             this.label1.TabIndex = 6;
