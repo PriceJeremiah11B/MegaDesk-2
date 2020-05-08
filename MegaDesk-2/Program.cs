@@ -8,9 +8,17 @@ namespace MegaDesk_2
 {
     static class Program
     {
+        private static List<DeskQuote> deskQuotes = new List<DeskQuote>();
 
-       private static List<>
-        [STAThread]
+        internal static List<DeskQuote> DeskQuotes { get => deskQuotes; set => deskQuotes = value; }
+        enum AttributeOrder
+        {
+            Width = 0,
+            Depth = 1,
+            SurfaceArea = 2,
+            Material = 3,
+            ProductionTime = 4
+        }
         static void Main()
         {
             Application.EnableVisualStyles();

@@ -265,22 +265,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox customerNameBox;
-        private System.Windows.Forms.TextBox drawerNumberBox;
-        private System.Windows.Forms.TextBox DepthBox;
-        private System.Windows.Forms.TextBox WidthBox;
         private System.Windows.Forms.ComboBox MaterialCombo;
-        private System.Windows.Forms.RadioButton sevenDayRadio;
-        private System.Windows.Forms.RadioButton fiveDayRadio;
-        private System.Windows.Forms.RadioButton threeDayRadio;
-        private System.Windows.Forms.RadioButton normalRadio;
-        private System.Windows.Forms.Button rushButton;
+        private System.Windows.Forms.TextBox WidthBox;
+        private System.Windows.Forms.TextBox DepthBox;
+        private System.Windows.Forms.TextBox drawerNumberBox;
         private System.Windows.Forms.Button CreateQuote;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton normalRadio;
+        private System.Windows.Forms.RadioButton threeDayRadio;
+        private System.Windows.Forms.RadioButton fiveDayRadio;
+        private System.Windows.Forms.Button rushButton;
+        private System.Windows.Forms.RadioButton sevenDayRadio;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox customerNameBox;
     }
 }
